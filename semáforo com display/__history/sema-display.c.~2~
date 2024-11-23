@@ -1,0 +1,25 @@
+#include<16F628A.h>
+#use delay(clock=4000000)
+#fuses INTRC_IO,NOWDT,PUT,BROWNOUT,NOLVP,NOMCLR
+
+void main(){
+
+// Loop principal
+    while(1) {
+        if(BUTTON == 1) { // Se o botão for pressionado
+            for(int i = 9; i >= 0; i--) {
+                // Exibir contagem decrescente no display de 7 segmentos
+                // Código para controlar o display de 7 segmentos aqui
+
+                delay(1000); // Aguarda 1 segundo
+            }
+            GREEN_LED = 1; // Acende o LED verde
+            RED_LED = 0;   // Apaga o LED vermelho
+        } else {
+            // Semáforo normal, sem pressionar o botão
+            GREEN_LED = 0; // Apaga o LED verde
+            RED_LED = 1;   // Acende o LED vermelho
+            YELLOW_LED = 0; // Mantém o LED amarelo apagado
+        }
+    }
+}

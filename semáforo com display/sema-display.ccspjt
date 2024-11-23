@@ -1,0 +1,20 @@
+[PROJECT]
+Target=sema-display.hex
+Processor_Text=PIC16F628A
+CCSVersion=5.007
+Compiler=PCM
+[Target Data]
+FileList=sema-display.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[sema-display.c]
+Type=4
+[mru-list]
+1=sema-display.c
+[Opened Files]
+1=sema-display.c
+2=..\semáforo simples\semaforo.c
+3=
+[Units]
+Count=1
+1=sema-display (main)

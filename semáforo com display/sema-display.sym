@@ -1,0 +1,51 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01F.6   C1OUT
+01F.7   C2OUT
+021     main.@SCRATCH1
+022     @delay_ms1.P1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09B-09C @READ_PROGRAM_MEMORY8.P1
+
+ROM Allocation:
+000004  @delay_ms1
+000019  @cinit1
+000019  main
+00001B  @cinit2
+
+Project Directory:
+    C:\Users\Ivina\Desktop\Microcontroladores e DSPS\semáforo com display\
+
+Project Files:
+    sema-display.c                                          [20-mar-24 09:14  CRC=2C1BE066]
+    ..\..\..\..\..\Program Files (x86)\PICC\Devices\16f628a.h [21-jun-13 16:04  CRC=FEBF88CA]
+
+Source signature=299AF1FA
+
+Units:
+    sema-display (main)
+
+Compiler Settings:
+    Processor:      PIC16F628A
+    Pointer Size:   16
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   sema-display.xsym
+    Errors:      sema-display.err
+    Ext Symbols: sema-display.esym
+    INHX8:       sema-display.hex
+    Symbols:     sema-display.sym
+    List:        sema-display.lst
+    Debug/COFF:  sema-display.cof
+    Project:     sema-display.ccspjt
+    Call Tree:   sema-display.tre
+    Statistics:  sema-display.STA
